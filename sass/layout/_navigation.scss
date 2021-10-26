@@ -1,0 +1,118 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .link {
+    color: var(--primary-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: var(--accent-text-color);
+    }
+}
+
+.site-nav .link.current {
+    position: relative;
+    padding-bottom: 32px;
+
+    color: var(--accent-text-color);
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        bottom: 0px;
+
+        display: block;
+
+        background-color: var(--accent-text-color);
+        border-radius: 2px;
+    }
+}
+
+.auth-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-nav .link {
+    color: inherit;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.nav {
+    display: flex;
+}
+
+.plink {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.tlink {
+    margin-left: 50px;
+}
+
+.nav,
+.auth-nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.svg-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail,
+.tel {
+    margin: 0;
+}
+
+.envelope {
+    margin-right: 10px;
+
+    fill: var(--secondary-text-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .svg-p:hover &,
+    .svg-p:focus & {
+        fill: var(--accent-text-color);
+    }
+}
+
+.smartphone {
+    margin-right: 10px;
+
+    fill: var(--secondary-text-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .svg-p:hover &,
+    .svg-p:focus & {
+        fill: var(--accent-text-color);
+    }
+}
+
