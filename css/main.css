@@ -29,6 +29,10 @@ img {
   min-width: 100%;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--white-text-color);
   color: var(--secondary-text-color);
@@ -483,7 +487,6 @@ body {
   padding-bottom: 30px;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .sign__title {
@@ -504,6 +507,7 @@ body {
 
 .team-items {
   width: 100%;
+  height: auto;
   margin-bottom: -30px;
 }
 
@@ -517,6 +521,7 @@ body {
 
 .team-items .team-items__item {
   margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 768px) {
