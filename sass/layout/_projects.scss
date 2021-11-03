@@ -1,6 +1,10 @@
 .projects {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &-hidden {
         display: none;
@@ -55,11 +59,29 @@
 
     &-items {
         display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: start;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+        }
+        margin-bottom: 40px;
+        margin-top: -15px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
 
-        >.item:not(:first-child) {
-            margin-left: 8px;
+        >.item {
+            @media screen and (max-width: 767px) {
+                margin-top: 15px;
+            }
+        }
+        >.item:not(:last-child) {
+            margin-right: 8px;
         }
     }
 
