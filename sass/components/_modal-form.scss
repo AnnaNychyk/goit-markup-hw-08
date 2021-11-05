@@ -118,11 +118,15 @@
 
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
     text-align: center;
 
-     span {
+    span {
         margin-right: 9px;
 
         width: 16px;
