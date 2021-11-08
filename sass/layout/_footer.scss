@@ -2,7 +2,7 @@
     @media screen and (min-width: 1200px){
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
     }
     
 }
@@ -72,6 +72,9 @@
 
 .address {
     width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 231px;
+    }
     color: var(--white-text-color);
 
     font-style: normal;
@@ -81,13 +84,6 @@
     text-align: center;
     @media screen and (min-width: 1200px) {
         text-align: left;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .footer-item:not(:last-child) {
-        margin-bottom: 60px;
-
     }
 }
 
@@ -107,6 +103,12 @@
 
 .footer-item{
     width: 100%;
+}
+
+.footer-item.first {
+    @media screen and (max-width: 767px){
+        margin-bottom: 60px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -173,6 +175,10 @@
             width: 450px;
             margin-left: auto;
             margin-right: auto;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+            margin: 0;
         }
         height: 50px;
         outline: none;
